@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rundll32 user32.dll,MessageBeep)",
+      "Bash(dir:*)",
+      "Bash(javac:*)"
+    ]
+  }
+}
