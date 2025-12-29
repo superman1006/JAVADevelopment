@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception{
-        File f1 = new File("D:\\Project\\JAVADevelopment\\src\\Java强化\\_05文件IO流\\a.txt");
+//        File f1 = new File("D:\\Project\\JAVADevelopment\\src\\Java强化\\_05文件IO流\\a.txt");
+        File f1 = new File("/Users/chenlv/Notebook/TXT=====================================/git同步.txt");
         System.out.println(f1.length());//字节大小
         System.out.println(f1.getName());//名字
         System.out.println(f1.isFile());//文件
