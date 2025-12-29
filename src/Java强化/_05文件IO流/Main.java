@@ -29,14 +29,18 @@ public class Main {
         System.out.println("=============================================");
         File f4 = new File("src\\Java强化\\_05文件IO流");
         File[] files = f4.listFiles();
-        for(File file : files){
-            System.out.println(file.getName());
+        if(files != null){
+            for(File file : files){
+                System.out.println(file.getName());
+            }
         }
+
 
         backtrack(new File("D:\\OneDrive\\Desktop\\Notebook"),"Git.txt");
     }
 
     /**
+     * 用于递归 dir 下所有文件
      * @param dir
      * @param filename
      */
