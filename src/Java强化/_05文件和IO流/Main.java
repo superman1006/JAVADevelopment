@@ -1,6 +1,5 @@
-package Java强化._05文件IO流;
+package Java强化._05文件和IO流;
 import java.io.File;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception{
