@@ -70,8 +70,5 @@ public class MainIO {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
-
     }
 }
