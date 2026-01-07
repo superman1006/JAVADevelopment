@@ -1,7 +1,7 @@
 package Java强化._05文件和IO流;
 import java.io.File;
 
-public class Main {
+public class MainBase {
     public static void main(String[] args) throws Exception{
 //        File f1 = new File("D:\\Project\\JAVADevelopment\\src\\Java强化\\_05文件IO流\\a.txt");
         File f1 = new File("/Users/chenlv/Notebook/TXT=====================================/git同步.txt");
