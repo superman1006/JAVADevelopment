@@ -1,6 +1,6 @@
 package Java强化._06多线程;
 
-public class Main2_ThreadCreate {
+public class Main2_ThreadCreation {
     static void main(String[] args) {
         Runnable ra = new MyRunnable();
         Thread mt = new Thread(ra);

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-public class Main6_SecuritySolution {
+public class Main6_ThreadSecuritySolution_synchronized {
     static void main(String[] args) {
         /**
          * 线程的安全问题 解决方案

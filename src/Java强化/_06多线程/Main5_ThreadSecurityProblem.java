@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-public class Main5_SecurityProblem {
+public class Main5_ThreadSecurityProblem {
     static void main(String[] args) {
         /**
          * 线程的安全问题

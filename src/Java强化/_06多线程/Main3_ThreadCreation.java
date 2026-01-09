@@ -3,7 +3,7 @@ package Java强化._06多线程;
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
-public class Main3_ThreadCreate {
+public class Main3_ThreadCreation {
     static void main(String[] args) {
 //      实现多线程的第三种方式：实现 Callable 接口(有 return 返回值)
         myCallable mc = new myCallable(10);

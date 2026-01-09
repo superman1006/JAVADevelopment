@@ -1,6 +1,6 @@
 package Java强化._06多线程;
 
-public class Main1_ThreadCreate {
+public class Main1_ThreadCreation {
     static void main(String[] args) {
         Thread mt = new MyThread();
         mt.start(); //启动线程，调用 run 方法
