@@ -1,4 +1,4 @@
-package Java高级.单元测试Junit;
+package Java高级._01单元测试Junit;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

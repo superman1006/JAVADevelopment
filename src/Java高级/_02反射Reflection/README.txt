@@ -13,11 +13,15 @@
                                                                  |    (获得class对象）
                                                              class对象
                                                                  |
-           ┌────────────────────────────┐───────────────────────────────────────────┐────────────────────────────────────┐
-         拿名字                       拿构造器                                     拿成员变量                            拿成员方法
-           |                            |                      ``                     |                                    |
+           ┌────────────────────────────┐───────────────────────────────────────────┐───────────────────────────────────────┐
+         拿名字                       拿构造器                                     拿成员变量                               拿成员方法
+           |                            |                      ``                     |                                     |
      .getName()             .getDeclaredConstructor()                  .getDeclaredField(成员变量名字)         .getDeclaredMethod(方法名,参数类型)
     .getSimpleName()         .getDeclaredConstructor(参数类型)             .getDeclaredFields()                   .getDeclaredMethods()
-                            .getDeclaredConstructors()                              /\                                   ｜
-                                        |                                         /    \                          .invoke(实例,参数)
+                            .getDeclaredConstructors()                              /\                                     ｜
+                                        |                                         /    \                           .invoke(实例,参数)
                             .newInstance(参数)创建对象                   .set(实例,新值)  .get(实例)
+
+
+
+

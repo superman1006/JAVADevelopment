@@ -1,4 +1,4 @@
-package Java高级.反射Reflection;
+package Java高级._02反射Reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -21,7 +21,7 @@ public class Main {
         System.out.println("c2: " + c2);
 
         // 3. 通过 Class.forName("全类名") 获取
-        Class c3 = Class.forName("Java高级.反射Reflection.Student");
+        Class c3 = Class.forName("Java高级._02反射Reflection.Student");
         System.out.println("c3: " + c3);
         // 说明: 以上三种方式获取到的 Class 对象是同一个对象
         System.out.println(c1 == c2); // true
