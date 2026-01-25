@@ -1,9 +1,5 @@
 package Java强化._06多线程;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 public class Main6_ThreadSecuritySolution_synchronized {
     static void main(String[] args) {
         /**

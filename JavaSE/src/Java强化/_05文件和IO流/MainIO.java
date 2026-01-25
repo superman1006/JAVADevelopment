@@ -22,8 +22,9 @@ public class MainIO {
          */
 
 //      ====================================================字节流输入====================================================
-        InputStream is = new FileInputStream("src/Java强化/_05文件和IO流/a.txt");
+        InputStream is = new FileInputStream("JavaSE/src/Java强化/_05文件和IO流/a.txt");
 //        InputStream bis = new BufferedInputStream(is); //缓冲字节输入流，提高读取效率
+
 
 //      1. is.read()少用
         int a;
@@ -40,7 +41,7 @@ public class MainIO {
 
 //      2.  is.readAllBytes() 效率相对 read 好一点，但是中文还是会乱码,适合小文件
 
-        InputStream is1 = new FileInputStream("src/Java强化/_05文件和IO流/a.txt");
+        InputStream is1 = new FileInputStream("JavaSE/src/Java强化/_05文件和IO流/a.txt");
         byte[] buffer = is1.readAllBytes();
         String str = new String(buffer);
         System.out.println(str);
@@ -53,7 +54,7 @@ public class MainIO {
 
 
 //      ====================================================字节流输出====================================================
-        OutputStream os = new FileOutputStream("src/Java强化/_05文件和IO流/a.txt",true);
+        OutputStream os = new FileOutputStream("JavaSE/src/Java强化/_05文件和IO流/a.txt",true);
 //      append参数为true表示追加写入，false表示覆盖写入
 
         os.write(97); //写入一个字节  ASCII 码表 97 -> 'a'
@@ -71,8 +72,8 @@ public class MainIO {
 //      } catch(异常类型 变量名) {
 //          处理异常的代码
 //      }
-        try (InputStream is2 = new FileInputStream("src/Java强化/_05文件和IO流/a.txt");
-             OutputStream os2 = new FileOutputStream("src/Java强化/_05文件和IO流/b.txt")) {
+        try (InputStream is2 = new FileInputStream("JavaSE/src/Java强化/_05文件和IO流/a.txt");
+             OutputStream os2 = new FileOutputStream("JavaSE/src/Java强化/_05文件和IO流/b.txt")) {
             byte[] buf = new byte[1024]; //1KB缓冲区
             int len;
             while ((len = is2.read(buf)) != -1) {
@@ -98,7 +99,7 @@ public class MainIO {
 
 //      ====================================================字符流输入====================================================
 
-        try(Reader fr = new FileReader("src/Java强化/_05文件和IO流/char.txt")){
+        try(Reader fr = new FileReader("JavaSE/src/Java强化/_05文件和IO流/char.txt")){
             char[] chs = new char[1024];
             int len = 0;
             while((len = fr.read(chs)) != -1){
@@ -113,7 +114,7 @@ public class MainIO {
 
 //      ====================================================字符流输出====================================================
 
-        try(Writer fr = new FileWriter("src/Java强化/_05文件和IO流/char.txt",true)){
+        try(Writer fr = new FileWriter("JavaSE/src/Java强化/_05文件和IO流/char.txt",true)){
             fr.write("'插入一些字符到文件中'\n");
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -132,8 +133,8 @@ public class MainIO {
 //      ================================================用 IO框架 commons-io来操作====================================================
 //      底层是使用上面的流来实现的，简化了代码
 //      需要导入 commons-io 的 jar包(官网下载 commons 的jar 包后放到 lib 目录中，然后右键Add as Library 添加到项目中)
-        FileUtils.copyFile(new File("src/Java强化/_05文件和IO流/a.txt"),new File("src/Java强化/_05文件和IO流/c.txt"));
-        String temp = FileUtils.readFileToString(new File("src/Java强化/_05文件和IO流/c.txt"));
+        FileUtils.copyFile(new File("JavaSE/src/Java强化/_05文件和IO流/a.txt"),new File("JavaSE/src/Java强化/_05文件和IO流/c.txt"));
+        String temp = FileUtils.readFileToString(new File("JavaSE/src/Java强化/_05文件和IO流/c.txt"));
         System.out.println(temp);
     }
 }
