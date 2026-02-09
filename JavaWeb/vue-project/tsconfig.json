@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* 基础设置 */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+
+    /* 其他你可能看到的设置 */
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
